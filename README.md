@@ -2,9 +2,7 @@ Credit Card Fraud Detection using AutoEncoder
 This project implements an unsupervised deep learning approach for detecting fraudulent credit card transactions using the PyOD library’s AutoEncoder model. The model learns normal transaction patterns and detects anomalies based on reconstruction error.
 
 📂 Project Structure
-bash
-Copy
-Edit
+
 .
 ├── data/
 │   └── creditcard.csv               # Dataset (download from Kaggle)
@@ -21,6 +19,7 @@ Edit
 ├── requirements.txt                  # Python dependencies
 ├── README.md                         # Project documentation
 └── .gitignore                        # Ignore virtual environment, dataset, and generated files
+
 📊 Dataset
 The dataset used is from Kaggle:
 Credit Card Fraud Detection Dataset
@@ -36,24 +35,15 @@ Class label: 0 = normal, 1 = fraud
 🛠 Installation
 Clone the repository
 
-bash
-Copy
-Edit
 git clone https://github.com/Sandeep271/fraud-detection-autoencoder.git
 cd fraud-detection-autoencoder
 Create and activate virtual environment
 
-bash
-Copy
-Edit
 python -m venv venv
 venv\Scripts\activate   # Windows
-# source venv/bin/activate   # Mac/Linux
+
 Install dependencies
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Download dataset
 Download creditcard.csv from Kaggle and place it inside the data/ folder.
@@ -61,9 +51,6 @@ Download creditcard.csv from Kaggle and place it inside the data/ folder.
 🔍 How It Works
 The AutoEncoder detects fraud in four main steps:
 
-scss
-Copy
-Edit
          ┌───────────────┐
          │  Input Data   │
          └──────┬────────┘
@@ -91,9 +78,7 @@ Decoding – The network reconstructs the original data from the compressed repr
 Error Measurement – Large reconstruction errors indicate anomalies (possible fraud).
 
 🚀 Running the Project
-bash
-Copy
-Edit
+
 python src/fraud_detection.py
 📈 Results
 Confusion Matrix
