@@ -1,0 +1,60 @@
+Project: Credit Card Fraud Detection using AutoEncoder
+Author: Sandeep
+Date: 8/10/2025
+Description: This project detects fraudulent credit card transactions using an unsupervised deep learning approach (AutoEncoder). It includes data preprocessing, model training, anomaly detection, and result visualization.
+
+---
+
+📁 Project Structure:
+
+.
+├── data/
+│   └── creditcard.csv             # Dataset containing credit card transactions
+│
+├── src/
+│   └── fraud_detection.py         # Main script for training and evaluation
+│
+├── output/
+│   ├── confusion_matrix.png       # Heatmap showing classification performance
+│   ├── precision_recall_curve.png # Precision-recall curve for anomaly detection
+│   └── prediction_results.csv     # CSV file with model predictions and scores
+│
+├── venv/                          # Python virtual environment (not submitted)
+│
+├── manifest.txt                   # This file
+└── README.md                      # (Optional) Project overview and usage guide
+
+---
+
+🧩 Python Dependencies:
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- pyod
+- tqdm
+- torch
+
+(Install with: `pip install -r requirements.txt`)
+
+---
+
+🚀 How to Run the Project:
+
+1. Activate the virtual environment:
+   > venv\Scripts\activate
+
+2. Run the main script:
+   > python src\fraud_detection.py
+
+All output files will be saved in the `output/` directory.
+
+---
+
+📌 Notes:
+
+- Only normal transactions (`Class == 0`) are used to train the AutoEncoder.
+- Predictions classify fraudulent transactions as anomalies (`1`).
+ 

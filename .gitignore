@@ -1,0 +1,16 @@
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore output folder with generated plots and CSVs
+output/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore Jupyter notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Ignore dataset file (optional, if dataset is large)
+data/creditcard.csv
+ECHO is on.
