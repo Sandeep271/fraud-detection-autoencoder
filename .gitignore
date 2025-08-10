@@ -14,3 +14,4 @@ __pycache__/
 # Ignore dataset file (optional, if dataset is large)
 data/creditcard.csv
 ECHO is on.
+output/ 
